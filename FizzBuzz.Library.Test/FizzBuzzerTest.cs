@@ -21,6 +21,7 @@ namespace FizzBuzz.Library.Test
             string output = FizzBuzzer.GetValue(input);
 
             // Assert
+            Assert.AreEqual("1", output);
         }
        
 
