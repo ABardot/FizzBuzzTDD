@@ -32,17 +32,15 @@ namespace FizzBuzz.Library.Test
         }
 
         [Test]
-        public void Buzzer_When3_ReturnsFizz()
-        {
-            int input = 3;
+        public void Buzzer_WhenDiv3_ReturnsFizz([Values(3, 6)] int input)
+        { 
             string output = FizzBuzzer.GetValue(input);
             Assert.AreEqual("Fizz", output);
         }
 
         [Test]
-        public void Buzzer_When5_ReturnsBuzz()
+        public void Buzzer_WhenDiv5_ReturnsBuzz([Values(5)] int input)
         {
-            int input = 5;
             string output = FizzBuzzer.GetValue(input);
             Assert.AreEqual("Buzz", output);
         }
